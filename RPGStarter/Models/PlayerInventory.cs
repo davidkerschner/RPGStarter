@@ -11,6 +11,6 @@ namespace RPGStarter.Models
         public int PlayerID { get; set; }
         public int ItemID { get; set; }
         public Player Player { get; set; }
-        public Item Item { get; set; }
+        //public Item Item { get; set; }
     }
 }

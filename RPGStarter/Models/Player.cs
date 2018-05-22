@@ -12,6 +12,6 @@ namespace RPGStarter.Models
         public string OwnerID { get; set; }
         public string Name { get; set; }
         public int StatID { get; set; }
-        public Stat Stat { get; set; }
+       // public Stat Stat { get; set; }
     }
 }
