@@ -1,0 +1,63 @@
+﻿@model RPGStarter.Models.Jobs
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Jobs</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="jobName" class="control-label"></label>
+                <input asp-for="jobName" class="form-control" />
+                <span asp-validation-for="jobName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="jobStr" class="control-label"></label>
+                <input asp-for="jobStr" class="form-control" />
+                <span asp-validation-for="jobStr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="jobCon" class="control-label"></label>
+                <input asp-for="jobCon" class="form-control" />
+                <span asp-validation-for="jobCon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="jobInt" class="control-label"></label>
+                <input asp-for="jobInt" class="form-control" />
+                <span asp-validation-for="jobInt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="jobDex" class="control-label"></label>
+                <input asp-for="jobDex" class="form-control" />
+                <span asp-validation-for="jobDex" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="jobHealth" class="control-label"></label>
+                <input asp-for="jobHealth" class="form-control" />
+                <span asp-validation-for="jobHealth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="jobLuck" class="control-label"></label>
+                <input asp-for="jobLuck" class="form-control" />
+                <span asp-validation-for="jobLuck" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

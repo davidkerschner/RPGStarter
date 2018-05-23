@@ -8,6 +8,7 @@ namespace RPGStarter.Models
 {
     public class Jobs
     {
+        [Key]
         public int jobID { get; set; }
         public string jobName { get; set; }
         public int jobStr { get; set; }
