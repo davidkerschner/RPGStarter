@@ -23,8 +23,8 @@ namespace RPGStarter.Data
             // Add your customizations after calling base.OnModelCreating(builder);
         }
 
+        public DbSet<RPGStarter.Models.Mob> Mob { get; set; }
         public DbSet<RPGStarter.Models.World> World { get; set; }
-
         public DbSet<RPGStarter.Models.Jobs> Jobs { get; set; }
     }
 }
