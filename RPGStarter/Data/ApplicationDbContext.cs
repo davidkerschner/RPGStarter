@@ -22,5 +22,9 @@ namespace RPGStarter.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<RPGStarter.Models.World> World { get; set; }
+
+        public DbSet<RPGStarter.Models.Jobs> Jobs { get; set; }
     }
 }
