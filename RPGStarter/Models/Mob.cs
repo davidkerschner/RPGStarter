@@ -8,20 +8,20 @@ namespace RPGStarter.Models
 {
     public class Mob
     {
-        [Required]
-        public int mob_id { get; set; }
+        [Key]
+        public int MobID { get; set; }
 
         [Required]
-        public string mob_name { get; set; }
+        public string MobName { get; set; }
 
         [Required]
-        public int item_id { get; set; }
+        public int ItemID { get; set; }
 
         [Required]
-        public string item_name { get; set; }
+        public string ItemName { get; set; }
 
         [Required]
-        public int stat_id { get; set; }
+        public int StatID { get; set; }
 
         [Required]
         public Boolean is_hostile { get; set; }
