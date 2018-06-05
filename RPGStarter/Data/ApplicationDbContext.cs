@@ -26,5 +26,7 @@ namespace RPGStarter.Data
         public DbSet<RPGStarter.Models.World> World { get; set; }
 
         public DbSet<RPGStarter.Models.Jobs> Jobs { get; set; }
+
+        public DbSet<RPGStarter.Models.Items> Items { get; set; }
     }
 }
